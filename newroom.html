@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>City Exhibition</title>
+		<meta charset="utf-8" name="description" content="">
+		
+    <!-- aframe script -->
+		<script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1f00d0beadf87bad7d275c174616e048f8b573fc/dist/aframe-master.min.js"></script>
+
+    <!-- other component -->
+		<script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+		<script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+		<script src="./js/aframe-room-component.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/colinfizgig/aframe_Components/components/camera-cube-env.js"></script>
+        <script src="./js/showinfo.js"></script>
+	</head>
+	<body>
+		<a-scene background="color: #7AD5FF"  > 
+			<!-- inspector-plugin-recast -->
+			
+			
+			
+			<a-asset>
+				<img id="aframe-version-img-src"
+					src="./assets/memes/version.png">
+				<img id="inspector-img-src"
+					src="./assets/memes/inspector.png">
+				<img id="exhibition-img-src"
+					src="./assets/memes/exhibition.png">
+				<img id="dev-img-src"
+					src="./assets/memes/dev.png">
+				<img id="learning-img-src"
+					src="./assets/memes/learning.png">
+
+
+				
+				<img id="marble06" 
+					src="./assets/textures/marble/marble06.jpg">
+				<img id="marble" 
+					src="./assets/textures/marble/marble.jpg">
+				<img id="concrete"
+				    src="./assets/textures/marble/Concrete floor.jpg">
+				<img id="marble10" 
+					src="./assets/textures/marble/marble10.jpg">
+
+
+
+				<img id="window-img-src"
+				    src="./assets/newpicture/窗戶.png">
+
+
+				<img id="linapartment-img-src"
+				    src="./assets/newpicture/日治時代舊貌 臺南末廣町.jfif">
+
+				<img id="lin-word-img-src"
+				    src="./assets/word/林百貨介紹_工作區域 1.png">
+
+				<img id="linapartment02-img-src"
+				    src="./assets/newpicture/林百貨廣告.jpg">
+
+				<img id="lin-word02-img-src"
+				    src="./assets/word/lin02-word_工作區域 1 複本.jpg">
+
+
+				<img id="Yebisu Kan01-img-src"
+				    src="./assets/newpicture/戎座舊照01.jpg">
+
+				<img id="Yebisu Kan02-img-src"
+				    src="./assets/newpicture/戎館舊照02.png">
+				
+				<img id="Yebisu Kan03-img-src"
+				    src="./assets/newpicture/戎館舊照03.jpg">
+
+				<img id="Yebisu Kan04-img-src"
+				    src="./assets/newpicture/戎館舊照04.jpg">
+
+				<img id="YEBISUKAN-word01-img-src"
+				    src="./assets/word/YEBISUKAN01-word.png">
+
+				<img id="YEBISUKAN-word02-img-src"
+				    src="./assets/word/YEBISUKAN02-word.png">
+
+				<img id="YEBISUKAN-word03-img-src"
+				    src="./assets/word/YEBISUKAN03-word.png">
+
+
+				<img id="TainanWuGarden01-img-src"
+				    src="./assets/newpicture/1900年的吳園.jpg">
+
+				<img id="TainanWuGarden02-img-src"
+				    src="./assets/newpicture/吳園舊景.jpg">
+
+				<img id="TainanWuGarden03-img-src"
+				    src="./assets/newpicture/日治時期的公會堂.png">
+
+				<img id="WALL-img-src"
+				    src="./assets/newpicture/文化展館B1.jpg">
+
+				<img id="WALL02-img-src"
+				    src="./assets/newpicture/文化展館B2.jpg">
+
+				<img id="WALL03-img-src"
+				    src="./assets/newpicture/文化展館B3.jpg">
+
+				<img id="main01-img-src"
+				    src="./assets/newpicture/文化展館-視覺1.jpg">
+
+				<img id="main02-img-src"
+				    src="./assets/newpicture/文化展館-視覺2.jpg">
+
+				<img id="video-word-img-src"
+				    src="./assets/word/文化展館-影片字.png">
+
+				<img id="main00-img-src"
+				    src="./assets/newpicture/主視覺_工作區域 1 複本 2.jpg">
+
+				<img id="101-img-src"
+				    src="./assets/newpicture/花磚02.jpg">
+
+				<img id="102-img-src"
+				    src="./assets/newpicture/顏水龍.jpg">
+
+				<img id="103-img-src"
+				    src="./assets/newpicture/居留室改裝咖啡館.jpg">
+
+				<img id="201-img-src"
+				    src="./assets/newpicture/裝置藝術蝴蝶.jpg">
+
+				<img id="202-img-src"
+				    src="./assets/newpicture/裝置藝術雕塑.jpg">
+
+				<img id="203-img-src"
+				    src="./assets/newpicture/停車場.jpg">
+
+				<img id="501-img-src"
+				    src="./assets/newpicture/興建中的臺南州廳側翼.jpg">
+
+				<img id="502-img-src"
+				    src="./assets/newpicture/臺南州廳_(1950年代)二戰後.jfif">
+
+				<img id="503-img-src"
+				    src="./assets/newpicture/轟炸後的臺南州廳.jfif">
+
+					
+
+
+				
+
+
+				<a-asset-item id="light"
+					src="./assets/model/Lantern/Lantern.gltf">
+				</a-asset-item>
+				<a-asset-item id="helmet"
+					src="./assets/model/DamagedHelmet/DamagedHelmet.gltf">
+				</a-asset-item>
+				<!-- <a-mixin id="spot-light"
+					light="type:spot;
+						color:#ffe494;
+						intensity:0.2;
+						penumbra:0.8;
+						angle:20;"
+				></a-mixin> -->
+
+				<a-asset-item id="navmesh"
+				    src="./assets/model/navmesh.gltf">
+				</a-asset-item>
+			</a-asset>
+
+            <!-- nav mesh -->
+			<a-gltf-model src="#navmesh"
+			    position="-1.2 0 5.5"
+			    nav-mesh
+				visible="false">
+
+			</a-gltf-model>
+		
+			<!-- ambient light -->
+			<a-light id="amb"
+				type="ambient"
+				color="white"
+				intensity="0.3">
+			</a-light>
+
+			
+			<!-- heisphere light -->
+			
+
+			<a-light id="hemi-B"
+				type="hemisphere"
+				color="#E4E4E4"
+				ground-color="#E4E4E4"
+				position="-0.849 3.028 -8.256"
+				intensity="0.7">
+			</a-light>
+
+
+
+
+			<!-- spot light -->
+
+			<!-- <a-light id="spot-wall02-3"
+			    type="spot"
+			    position="2.914 2.795 -12.140"
+			    distance="5"
+			    intensity="0.8"
+			    penumbra="0.8"
+			    angle="20"
+				rotation="-20 0 0"
+				color="#ffe494">
+			</a-light> -->
+
+			<!-- <a-light id="spot-wall02-2"
+			    type="spot"
+			    position="-0.554 2.795 -12.140"
+			    distance="5"
+			    intensity="0.8"
+			    penumbra="0.8"
+			    angle="20"
+				rotation="-20 0 0"
+				color="#ffe494">
+			</a-light> -->
+
+			<!-- <a-light id="spot-wall02-1"
+			    type="spot"
+			    position="-3.9 2.795 -12.140"
+			    distance="5"
+			    intensity="0.8"
+			    penumbra="0.8"
+			    angle="20"
+				rotation="-20 0 0"
+				color="#ffe494">
+			</a-light> -->
+
+			<a-light id="spot-wall-main01"
+			    type="spot"
+			    position="-1.100 2.624 -0.496"
+			    distance="5"
+			    intensity="0.8"
+			    penumbra="0.8"
+			    angle="40"
+				rotation="-20 0 0"
+				color="#ffe494">
+			</a-light>
+
+			<a-light id="spot-wall-main02"
+			    type="spot"
+			    position="1.547 3.839 -1.851"
+			    distance="5"
+			    intensity="0.5"
+			    penumbra="0.8"
+			    angle="20"
+				rotation="-40 -45 0"
+				color="#ffe494">
+			</a-light>
+
+			<a-light id="spot-wall-main03"
+			    type="spot"
+			    position="-0.422 2.750 -6.191"
+			    distance="5"
+			    intensity="0.8"
+			    penumbra="0.8"
+			    angle="40"
+				rotation="-20 -180 0"
+				color="#ffe494">
+			</a-light>
+
+			<a-light id="spot-wall-main04"
+			    type="spot"
+			    position="-2.917 2.750 -6.191"
+			    distance="5"
+			    intensity="0.6"
+			    penumbra="0.8"
+			    angle="20"
+				rotation="-20 -180 0"
+				color="#ffe494">
+			</a-light>
+
+			<a-light id="spot-wall-main00"
+			    type="spot"
+			    position="-4.365 3.541 9.964"
+			    distance="5"
+			    intensity="0.6"
+			    penumbra="0.8"
+			    angle="40"
+				rotation="-50 -50 0"
+				color="#ffe494">
+			</a-light>
+
+			<a-light id="spot-wall-main000"
+			    type="spot"
+			    position="1.643 3.541 9.964"
+			    distance="5"
+			    intensity="0.6"
+			    penumbra="0.8"
+			    angle="40"
+				rotation="-50 50 0"
+				color="#ffe494">
+			</a-light>
+
+			<a-light id="spot-wall-main0000"
+			    type="spot"
+			    position="-1.322 3.541 9.104"
+			    distance="5"
+			    intensity="0.6"
+			    penumbra="0.8"
+			    angle="40"
+				rotation="-80 0 0"
+				color="#ffe494">
+			</a-light>
+
+			<a-light id="spot-wall-mainb01"
+			    type="spot"
+			    position="1.424 4.180 1.174"
+			    distance="5"
+			    intensity="0.5"
+			    penumbra="0.8"
+			    angle="20"
+				rotation="-60 0 0"
+				color="#ffe494">
+			</a-light>
+
+			<a-light id="spot-wall-mainb02"
+			    type="spot"
+			    position="3.237 4.180 1.174"
+			    distance="5"
+			    intensity="0.5"
+			    penumbra="0.8"
+			    angle="20"
+				rotation="-60 0 0"
+				color="#ffe494">
+			</a-light>
+
+			<a-light id="spot-wall-mainb03"
+			    type="spot"
+			    position="5.009 4.180 1.174"
+			    distance="5"
+			    intensity="0.5"
+			    penumbra="0.8"
+			    angle="20"
+				rotation="-60 0 0"
+				color="#ffe494">
+			</a-light>
+
+			<a-light id="spot-wall-b-door"
+			    type="spot"
+			    position="-1.188 3.094 1.659"
+			    distance="6"
+			    intensity="0.8"
+			    penumbra="0.8"
+			    angle="20"
+				rotation="-90 0 0"
+				color="#ffe494">
+			</a-light>
+
+			<!-- <a-light id="spot-lin-word"
+			    type="spot"
+			    position="1 2.16 -0.15"
+			    
+			    intensity="0.2"
+			    penumbra="0.8"
+			    angle="20"
+				color="#ffe494">
+			</a-light> -->
+
+			<!-- <a-light id="spot-linapartment02"
+			    type="spot"
+			    position="3.45 1.8 0.86"
+			    light="target:#linapartment02-img"
+			    intensity="0.3"
+			    penumbra="0.8"
+			    angle="20"
+				color="#ffe494">
+			</a-light>
+		
+		    <a-light id="spot-Yebisu Kan01"
+			    type="spot"
+			    position="0.772 1.800 -2.5"
+			    light="target:#YebisuKan01-img"
+			    intensity="0.3"
+			    penumbra="0.8"
+			    angle="15"
+			    color="#ffe494">
+		    </a-light>
+
+			<a-light id="spot-Yebisu Kan02"
+			    type="spot"
+			    position="-1.066 1.8 -3.145"
+			    light="target:#YebisuKan02-img"
+			    intensity="0.3"
+			    penumbra="0.8"
+			    angle="15"
+			    color="#ffe494">
+		    </a-light>
+
+			<a-light id="spot-YebisuKan03"
+			    type="spot"
+			    position="-3.012 1.800 -2.5"
+			    light="target:#YebisuKan03-img"
+			    intensity="0.3"
+			    penumbra="0.8"
+			    angle="15"
+			    color="#ffe494">
+		    </a-light>
+
+			<a-light id="spot-YebisuKan04"
+			    type="spot"
+			    position="3.45 1.8 -3.7"
+			    light="target:#YebisuKan04-img"
+			    intensity="0.3"
+			    penumbra="0.8"
+			    angle="20"
+				color="#ffe494">
+			</a-light>
+
+			<a-light id="spot-TainanWuGarden01"
+			    type="spot"
+			    position="-1.3 2.1 0.445"
+			    light="target:#TainanWuGarden01-img"
+			    intensity="0.5"
+			    penumbra="0.8"
+			    angle="10"
+			    color="#ffe494">
+		    </a-light>
+
+			<a-light id="spot-TainanWuGarden02"
+			    type="spot"
+			    position="-1.3 2.1 -3.6"
+			    light="target:#TainanWuGarden02-img"
+			    intensity="0.5"
+			    penumbra="0.8"
+			    angle="10"
+			    color="#ffe494">
+		    </a-light>
+
+			<a-light id="spot-TainanWuGarden03"
+			    type="spot"
+			    position="-1.3 2.1 3.1"
+			    light="target:#TainanWuGarden03-img"
+			    intensity="0.5"
+			    penumbra="0.8"
+			    angle="10"
+			    color="#ffe494">
+		    </a-light> -->
+			
+			
+
+            <!-- point light -->
+
+            <!-- <a-light id="pot01"
+			    type="point"
+                color="#FFFC5D"
+                intensity="0.1"
+                position="-1.9 2.6 -1.2"
+                light="castShadow: true">
+            </a-light> -->
+
+			<a-light id="pot02"
+			    type="point"
+                color="#FFFEC1"
+                intensity="0.1"
+                position="-0.432 3.456 -8.390"
+                light="castShadow: true">
+            </a-light>
+
+			<a-light id="pot-main-left"
+			    type="point"
+                color="#FFFEC1"
+                intensity="0.05"
+                position="-12.266 3.456 11.269"
+                light="castShadow: true">
+            </a-light>
+
+			<a-light id="pot-main-right"
+			    type="point"
+                color="#FFFEC1"
+                intensity="0.05"
+                position="6.952 3.456 11.269"
+                light="castShadow: true">
+            </a-light>
+
+			<!-- <a-light id="pot03"
+			    type="point"
+                color="#FFFEC1"
+                intensity="0.1"
+                position="3.5 2.45 3.8"
+                light="castShadow: true">
+            </a-light> -->
+
+			<!-- <a-light id="pot04"
+			    type="point"
+                color="#FFFC5D"
+                intensity="0.1"
+                position="0 0.9 -1.2"
+                light="castShadow: false">
+            </a-light> -->
+
+			<!-- <a-light id="pot02"
+			    type="point"
+                color="#FFFC5D"
+                intensity="0.1"
+                position="2.3 2.6 -1.2"
+                light="castShadow: true">
+            </a-light> -->
+
+
+			
+
+
+        
+			<!-- <a-entity id="spot-helmet"
+				mixin="spot-light"
+				position="0.4 3 -0.2"
+				light="target:#helmet-model;
+					cast-shadow:true">
+			</a-entity> -->
+
+			<!-- room -->
+			<rw-room id="mainroom-B"
+				position="-4 0 -12"
+				height="3.5"
+				rotation="0 0 0"
+				material="color:#E7E7E7"
+				shadow
+				>
+				<rw-wall position="10 0 -3"></rw-wall>
+				<rw-wall position="10 0 12"></rw-wall>
+				<rw-wall position="4.5 0 12">
+					<rw-doorhole id="doorb1"></rw-doorhole>
+                    <rw-doorlink 
+                        from="#doorb1" to="#doorb2" 
+                        position="1.8 0 0"
+                        width="1.5"
+                        height="2.2"></rw-doorlink>
+				</rw-wall>
+				<rw-wall position="4.5 0 15"></rw-wall>
+				<rw-wall position="1 0 15"></rw-wall>
+				<rw-wall position="1 0 12"
+				         ></rw-wall>
+				<rw-wall position="-1 0 12"></rw-wall>
+				<rw-wall position="-3 0 10"></rw-wall>
+				<rw-wall position="-3 0 -3">
+					<rw-doorhole id="maindoor"></rw-doorhole>
+				</rw-wall>
+				<!-- <rw-ceiling
+				    color="#747272">
+				</rw-ceiling> -->
+			</rw-room>
+
+			<rw-room id="mainroom"
+				position="-4 0 -12"
+				height="3.5"
+				rotation="0 0 0"
+				material="color:#E7E7E7"
+				shadow
+				>
+
+				<rw-wall position="4.5 0 12"></rw-wall>
+				<rw-wall position="4.5 0 12"></rw-wall>
+				<rw-wall position="10 0 12"></rw-wall>
+				<rw-wall position="10 0 15">
+					<rw-doorhole id="doorc2"></rw-doorhole>
+				</rw-wall>
+				<rw-wall position="14.362 0 18"></rw-wall>
+				<rw-wall position="19 0 18"></rw-wall>
+				<rw-wall position="19 0 26"></rw-wall>
+				<rw-wall position="-11 0 26"></rw-wall>
+				<rw-wall position="-11 0 18"></rw-wall>
+				<rw-wall position="-6 0 18">
+					<rw-doorhole id="doora2"></rw-doorhole>
+				</rw-wall>
+				<rw-wall position="-3 0 15"></rw-wall>
+				<rw-wall position="1 0 15"></rw-wall>
+				<rw-wall position="4.5 0 15">
+					<rw-doorhole id="doorb2"></rw-doorhole>
+				</rw-wall>
+				<!-- <rw-ceiling
+				    color="#C7C7C7">
+				</rw-ceiling> -->
+			</rw-room>
+
+			<rw-room id="mainroom-c"
+				position="-4 0 -12"
+				height="3.5"
+				rotation="0 0 0"
+				material="color:#E7E7E7"
+				shadow>
+				
+				<rw-wall position="19 0 -3"></rw-wall>
+				<rw-wall position="19 0 18"></rw-wall>
+				<rw-wall position="14.362 0 18">
+					<rw-doorhole id="doorc1"></rw-doorhole>
+                    <rw-doorlink 
+                        from="#doorc1" to="#doorc2" 
+                        position="1.8 0 0"
+                        width="1.5"
+                        height="2.2"></rw-doorlink>
+				</rw-wall>
+				
+				<rw-wall position="10 0 15"></rw-wall>
+				<rw-wall position="10 0 -3">
+					<rw-doorhole id="maindoor"></rw-doorhole>
+				</rw-wall>
+				<!-- <rw-ceiling
+				    color="#C7C7C7">
+				</rw-ceiling> -->
+			</rw-room>
+
+			<rw-room id="mainroom-A"
+				position="-4 0 -12"
+				height="3.5"
+				rotation="0 0 0"
+				material="color:#E7E7E7"
+				shadow>
+				
+				<rw-wall position="-3 0 -3"></rw-wall>
+				<rw-wall position="-3 0 15">
+					<rw-doorhole id="doora1"></rw-doorhole>
+                    <rw-doorlink 
+                        from="#doora1" to="#doora2"
+                        position="1.8 0 0"
+                        width="1.5"
+                        height="2.2"></rw-doorlink>
+				</rw-wall>
+				<rw-wall position="-6 0 18"
+				         ></rw-wall>
+				
+				<rw-wall position="-11 0 18"></rw-wall>
+				<rw-wall position="-11 0 -3">
+					<rw-doorhole id="maindoor"></rw-doorhole>
+				</rw-wall>
+				<!-- <rw-ceiling
+				    color="#C7C7C7">
+				</rw-ceiling> -->
+			</rw-room>
+
+			<rw-room id="hall"
+				position="-4 0 -12"
+				height="3.5"
+				rotation="0 0 0"
+				material="color:#E7E7E7"
+				shadow>
+				
+				<rw-wall position="19 0 -3"></rw-wall>
+				<rw-wall position="19 0 26"
+				         ></rw-wall>
+				
+				<rw-wall position="-11 0 26"></rw-wall>
+				<rw-wall position="-11 0 -3">
+					<rw-doorhole id="maindoor"></rw-doorhole>
+				</rw-wall>
+				<rw-ceiling
+				    color="#C7C7C7">
+				</rw-ceiling>
+			</rw-room>
+
+			<!-- <rw-room id="secondroom"
+				position="-5 0 -8"
+				length="3"
+				width="5"
+				height="3.5"
+				material="color: white"
+				shadow>
+				<rw-wall position="1 0 0"></rw-wall>
+				<rw-wall position="1 0 1"></rw-wall>
+				<rw-wall position="0 0 1">
+					<rw-doorhole id="seconddoor">
+
+						<rw-doorlink
+							from="#maindoor"
+							to="#seconddoor"
+							position="2 0 0"
+							width="1.2"
+							height="2">
+						</rw-doorlink>
+
+					</rw-doorhole>
+				</rw-wall>
+				<rw-wall position="0 0 0"></rw-wall>
+				<rw-ceiling></rw-ceiling>
+			</rw-room> -->
+
+			<a-plane id="floor"
+				rotation="-90 90 0"
+				width="30"
+				height="30"
+				src="#marble10"
+				material="repeat: 20 20;"
+				shadow>
+			</a-plane>
+
+			<a-box id="wall"
+			    position="-1.1 1.75 -3.448"
+				rotation="0 0 90"
+			    width="2"
+			    height="3.5"
+			    depth="0.1"
+				scale="1.8 1.648 1"
+				color="#D1D1D1"
+			    shadow></a-box>
+
+			<a-box id="wall02"
+			    position="2.430 1.75 -2.782"
+				rotation="0 135 90"
+			    width="2"
+			    height="3.5"
+			    depth="0.1"
+				scale="1.8 0.548 1"
+				color="#D1D1D1"
+			    shadow></a-box>
+
+			<!-- <a-box id="wall-A"
+			    position="-2.231 1.75 2.918"
+				rotation="0 0 90"
+			    width="2"
+			    height="3.5"
+			    depth="0.1"
+				scale="1.8 1.648 1"
+				color="#D1D1D1"
+			    shadow></a-box> -->
+
+			<a-box id="wall-video"
+			    position="-0.259 2.972 -3.536"
+				rotation="0 0 90"
+			    width="1"
+			    height="1"
+			    depth="0.1"
+				scale="0.142 3.375 1"
+				color="#636363"
+			    shadow></a-box>
+
+			<a-box id="wall02-video"
+			    position="-0.278 1.932 -3.537"
+				rotation="0 0 90"
+			    width="1"
+			    height="1"
+			    depth="0.1"
+				scale="2.104 3.281 0.250"
+				color="#E7E7E7"
+			    shadow></a-box>
+
+			<a-cylinder id="wall03-video"
+			    position="-0.283 0.862 -3.541"
+			    rotation="0 0 90"
+			    height="1"
+				radius="0.03"
+			    scale="1 3.362 1"
+			    color="#636363">
+			</a-cylinder>
+
+			<!-- <a-box id="showcase-center02"
+			    position="0.086 1.935 -1.366"
+				rotation="0 0 90"
+			    width="2"
+			    height="3.5"
+			    depth="0.1"
+				scale="0.453 1 0.350"
+				color="#D1D1D1"
+			    ></a-box> -->
+
+			<!-- <a-box id="showcase-01"
+			    position="4.8 1.8 0.9"
+				rotation="0 90 90"
+			    width="2"
+			    height="3.5"
+			    depth="0.1"
+				scale="0.8 0.35 0.25"
+				opacity="0.5"
+			    shadow></a-box>
+
+			<a-box id="showcase-01-line-a"
+			    position="4.8 3.4 0.43"
+				rotation="0 90 90"
+			    width="2"
+			    height="3.5"
+			    depth="0.1"
+				scale="0.8 0.001 0.001"
+			    shadow></a-box>
+
+			<a-box id="showcase-01-line-b"
+			    position="4.8 3.4 1.3"
+				rotation="0 90 90"
+			    width="2"
+			    height="3.5"
+			    depth="0.1"
+				scale="0.8 0.001 0.001"
+			    shadow></a-box>
+
+			<a-box id="showcase-01-2"
+			    position="4.8 1.8 -3.67"
+				rotation="0 90 90"
+			    width="2"
+			    height="3.5"
+			    depth="0.1"
+				scale="0.8 0.35 0.25"
+				opacity="0.5"
+			    shadow></a-box>
+
+			<a-box id="showcase-01-2-line-a"
+			    position="4.8 3.4 -4.1"
+				rotation="0 90 90"
+			    width="2"
+			    height="3.5"
+			    depth="0.1"
+				scale="0.8 0.001 0.001"
+			    shadow></a-box>
+
+			<a-box id="showcase-01-2-line-b"
+			    position="4.8 3.4 -3.3"
+				rotation="0 90 90"
+			    width="2"
+			    height="3.5"
+			    depth="0.1"
+				scale="0.8 0.001 0.001"
+			    shadow></a-box> -->
+
+			<a-cylinder id="showcase-center01"
+			    color="#FEFEFF" 
+			    segments-radial="6"
+			    position="-0.622 0.2 -11.143" 
+			    rotation="-90 90 0"
+			    scale="1 4.2 1"
+				metalness="0.1"
+				shadow></a-cylinder>
+
+			<a-cylinder id="showcase-center02"
+			    color="#FEFEFF" 
+			    segments-radial="6"
+			    position="2.609 0.2 -7.904" 
+			    rotation="-90 180 0"
+			    scale="1 4.2 1"
+				metalness="0.1"
+				shadow></a-cylinder>
+
+			<a-cylinder id="showcase-center03"
+			    color="#FEFEFF" 
+			    segments-radial="6"
+			    position="-3.625 0.2 -7.901" 
+			    rotation="-90 180 0"
+			    scale="1 4.2 1"
+				metalness="0.1"
+				shadow></a-cylinder>
+
+
+
+			<a-box id="ceiling"
+			    color="#D1D1D1"
+			    position="3.250 1.135 0.400"
+				rotation="-90 -90 0"
+				scale="0.700 5.485 0.1"
+				shadow>
+			</a-box>
+
+			<a-box id="outside-wall"
+			    position="-1.362 1.750 8.752"
+				rotation="0 0 90"
+			    width="2"
+			    height="3.5"
+			    depth="0.1"
+				scale="1.8 1.920 1"
+				color="#D1D1D1"
+			    shadow></a-box>
+
+			
+			
+			<!-- title text -->
+			
+			<!-- <a-text id="title"
+				position="5 2 5"
+				rotation="0 -90 0"
+				color="black"
+				value="體感"
+				width="20"
+				font="custom-msdf.json"
+				negate="false"
+			></a-text> -->
+
+			<!-- <a-text id="desc"
+				position="5 1.42 5"
+				rotation="0 -90 0"
+				color="black"
+				value="A meme (/miːm/ MEEM) is an idea, behavior, or style that spreads by means of imitation from person to person within a culture and often carries symbolic meaning representing a particular phenomenon or theme. A meme acts as a unit for carrying cultural ideas, symbols, or practices, that can be transmitted from one mind to another through writing, speech, gestures, rituals, or other imitable phenomena with a mimicked theme. Supporters of the concept regard memes as cultural analogues to genes in that they self-replicate, mutate, and respond to selective pressures."
+				width="4"
+				wrap-count="180"
+				shader="msdf"
+				font="https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/oswald/Oswald-Regular.json"
+			></a-text> -->
+
+            <!-- show objects -->
+
+
+
+			<a-video id="TainanArtMuseum-vdo"
+			    src="./assets/video/Tainan Art Museum.mp4"
+			    width="16" 
+				height="9" 
+				position="-0.277 1.927 -3.568"
+				scale="0.2 0.2 0.2"
+				rotation="0 180 0">
+				
+
+			</a-video>
+			
+
+		<!-- linapartment-img -->
+
+			<!-- <a-image id="linapartment-img"
+				position="2.8 1.8 2.1"
+				rotation="0 180 0"
+				height="1"
+				width="1.6"
+				scale="1.2 1.2 1.2"
+				src="#linapartment-img-src"
+				material="shader:standard"
+				showinfo="title: aframe version;
+				          content: 1.2.0 va. 1.0.4????????">
+			</a-image> -->
+
+			<!-- <a-image id="lin-word-img"
+				position="0.9 1.8 2.1"
+				rotation="0 180 0"
+				height="1"
+				width="1"
+				scale="1.2 1.2 1.2"
+				src="#lin-word-img-src"
+				material="shader:standard"
+				showinfo="title: aframe version;
+				          content: 1.2.0 va. 1.0.4????????">
+			</a-image> -->
+
+			<!-- <a-image id="linapartment02-img"
+			    position="4.74 1.8 0.9"
+				rotation="0 -90 0"
+				height="1"
+				width="0.6"
+				scale="0.8 0.8 0.8"
+				src="#linapartment02-img-src"
+				material="shader:standard"
+				showinfo="title: aframe version;
+				          content: 1.2.0 va. 1.0.4????????">
+			</a-image>
+
+			<a-image id="lin-word02-img"
+			    position="4.75 1.25 0.9"
+				rotation="0 -90 0"
+				height="1"
+				width="2.8"
+				scale="0.2 0.2 0.2"
+				src="#lin-word02-img-src"
+				material="shader:standard"
+				showinfo="title: aframe version;
+				          content: 1.2.0 va. 1.0.4????????">
+			</a-image> -->
+
+        <!-- Yebisu Kan-img -->
+
+			<!-- <a-image id="YebisuKan01-img"
+			    position="1.060 1.800 -4.987"
+				rotation="0 0 0"
+				height="1"
+				width="1.4"
+				scale="1 1 1"
+				src="#Yebisu Kan01-img-src"
+				material="shader:standard"
+				showinfo="title: aframe version;
+				          content: 1.2.0 va. 1.0.4????????">
+			</a-image>
+
+			<a-image id="YebisuKan02-img"
+			    position="-1.119 1.800 -4.993"
+				rotation="0 0 0"
+				height="1"
+				width="1.4"
+				scale="1 1 1"
+				src="#Yebisu Kan02-img-src"
+				material="shader:standard"
+				showinfo="title: aframe version;
+				          content: 1.2.0 va. 1.0.4????????">
+			</a-image>
+
+			<a-image id="YebisuKan03-img"
+			    position="-3.310 1.800 -4.983"
+				rotation="0 0 0"
+				height="1"
+				width="1.4"
+				scale="1 1 1"
+				src="#Yebisu Kan03-img-src"
+				material="shader:standard"
+				showinfo="title: aframe version;
+				          content: 1.2.0 va. 1.0.4????????">
+			</a-image>
+
+			<a-image id="YebisuKan04-img"
+			    position="4.776 1.8 -3.7"
+				rotation="0 -90 0"
+				height="1"
+				width="0.7"
+				scale="0.7 0.7 0.7"
+				src="#Yebisu Kan04-img-src"
+				material="shader:standard"
+				showinfo="title: aframe version;
+				          content: 1.2.0 va. 1.0.4????????">
+			</a-image> -->
+
+			<!-- <a-image id="YebisuKan-word01-img"
+			    position="1.38 1 -1.78"
+				rotation="-60 -180 0"
+				height="1"
+				width="2.2"
+				scale="0.4 0.4 0.4"
+				src="#YEBISUKAN-word01-img-src"
+				material="shader:standard"
+				showinfo="title: aframe version;
+				          content: 1.2.0 va. 1.0.4????????">
+			</a-image> -->
+
+			<!-- <a-image id="YebisuKan-word02-img"
+			    position="-0.43 1 -1.78"
+				rotation="-60 -180 0"
+				height="1"
+				width="2.2"
+				scale="0.4 0.4 0.4"
+				src="#YEBISUKAN-word02-img-src"
+				material="shader:standard"
+				showinfo="title: aframe version;
+				          content: 1.2.0 va. 1.0.4????????">
+			</a-image> -->
+
+			<!-- <a-image id="YebisuKan-word03-img"
+			    position="-2.2 1 -1.78"
+				rotation="-60 -180 0"
+				height="1"
+				width="2.2"
+				scale="0.4 0.4 0.4"
+				src="#YEBISUKAN-word03-img-src"
+				material="shader:standard"
+				showinfo="title: aframe version;
+				          content: 1.2.0 va. 1.0.4????????">
+			</a-image> -->
+
+			<!-- TainanWuGarden-img  -->
+
+			<!-- <a-image id="TainanWuGarden01-img"
+			    position="-4.989 1.8 0.932"
+				rotation="0 90 0"
+				height="1"
+				width="1.46"
+				scale="1 1 1"
+				src="#TainanWuGarden01-img-src"
+				material="shader:standard"
+				showinfo="title: aframe version;
+				          content: 1.2.0 va. 1.0.4????????">
+			</a-image>
+
+			<a-image id="TainanWuGarden02-img"
+			    position="-4.989 1.8 -1.288"
+				rotation="0 90 0"
+				height="1"
+				width="1.5"
+				scale="1 1 1"
+				src="#TainanWuGarden02-img-src"
+				material="shader:standard"
+				showinfo="title: aframe version;
+				          content: 1.2.0 va. 1.0.4????????">
+			</a-image>
+
+			<a-image id="TainanWuGarden03-img"
+			    position="-4.989 1.8 3.1"
+				rotation="0 90 0"
+				height="1"
+				width="1.4"
+				scale="1 1 1"
+				src="#TainanWuGarden03-img-src"
+				material="shader:standard"
+				showinfo="title: aframe version;
+				          content: 1.2.0 va. 1.0.4????????">
+			</a-image> -->
+
+
+
+
+
+
+
+
+
+			<!-- <a-image id="inspector-img"
+				position="-1.5 1.5 4.99"
+				rotation="0 -180 0"
+				height="1"
+				width="1"
+				src="#inspector-img-src"
+				material="shader:standard"
+				class="interactable"
+				showinfo>
+			</a-image> -->
+
+			<!-- <a-image id="exhibition-img"
+				position="4.99 1.5 1.5"
+				rotation="0 -90 0"
+				height="1.3"
+				width="1.3"
+				src="#exhibition-img-src"
+				material="shader:standard">
+			</a-image> -->
+
+			<!-- <a-image id="dev-img"
+				position="4.99 1.5 -2.5"
+				rotation="0 -90 0"
+				height="1.5"
+				width="1.2"
+				src="#dev-img-src"
+				material="shader:standard">
+			</a-image> -->
+
+			<!-- <a-image id="WALL-img"
+			    position="4.99 1.8 -2.138"
+				rotation="0 -90 0"
+				height="1"
+				width="4"
+				scale="2.7 2.7 2.7"
+				src="#WALL-img-src"
+				material="shader:standard">
+
+			</a-image> -->
+
+			<!-- <a-image id="WALL02-img"
+			    position="-1.796 1.8 -7.990"
+				rotation="0 0 0"
+				height="1"
+				width="4"
+				scale="2.7 2.7 2.7"
+				src="#WALL02-img-src"
+				material="shader:standard">
+
+			</a-image> -->
+
+			<a-image id="maim01-img"
+				position="-1.1 1.752 -3.392"
+				rotation="0 0 0"
+				height="1"
+				width="1.75"
+				scale="3.3 3.3 3.3"
+				src="#main01-img-src"
+				material="shader:standard">
+			</a-image>
+
+			<a-image id="maim02-img"
+				position="2.355 1.749 -2.782"
+				rotation="0 -45 0"
+				height="1.75"
+				width="1"
+				scale="2 2 2"
+				src="#main02-img-src"
+				material="shader:standard">
+			</a-image>
+
+			<a-image id="video-word-img"
+				position="-2.934 1.919 -3.514"
+				rotation="0 180 0"
+				height="1.2"
+				width="1"
+				scale="1.5 1.5 1.5"
+				src="#video-word-img-src"
+				material="shader:standard">
+			</a-image>
+
+			<a-image id="maim00-img"
+				position="-1.360 1.749 8.803"
+				rotation="0 0 0"
+				height="1"
+				width="1.75"
+				scale="3.5 3.5 3.5"
+				src="#main00-img-src"
+				material="shader:standard">
+			</a-image>
+
+			
+
+			<a-image id="101-img"
+				position="3.116 0.921 -8.904"
+				rotation="-60 90 0"
+				height="1.43"
+				width="1"
+				scale="0.5 0.5 0.5"
+				src="#101-img-src"
+				material="shader:standard">
+			</a-image>
+
+			<a-image id="102-img"
+				position="3.116 0.921 -7.786"
+				rotation="-60 90 0"
+				height="1.3"
+				width="1"
+				scale="0.5 0.5 0.5"
+				src="#102-img-src"
+				material="shader:standard">
+			</a-image>
+
+			<a-image id="103-img"
+				position="3.116 0.921 -6.690"
+				rotation="-60 90 0"
+				height="1."
+				width="1.5"
+				scale="0.5 0.5 0.5"
+				src="#103-img-src"
+				material="shader:standard">
+			</a-image>
+
+			<a-image id="201-img"
+				position="-1.813 0.921 -11.693"
+				rotation="-60 180 0"
+				height="1."
+				width="1.5"
+				scale="0.5 0.5 0.5"
+				src="#201-img-src"
+				material="shader:standard">
+			</a-image>
+
+			<a-image id="202-img"
+				position="-0.631 0.921 -11.693"
+				rotation="-60 180 0"
+				height="1."
+				width="1.5"
+				scale="0.5 0.5 0.5"
+				src="#202-img-src"
+				material="shader:standard">
+			</a-image>
+
+			<a-image id="203-img"
+				position="0.610 0.921 -11.693"
+				rotation="-60 180 0"
+				height="1."
+				width="1.3"
+				scale="0.5 0.5 0.5"
+				src="#203-img-src"
+				material="shader:standard">
+			</a-image>
+
+			<a-image id="501-img"
+				position="-4.119 0.921 -8.904"
+				rotation="-60 -90 0"
+				height="1."
+				width="1.3"
+				scale="0.5 0.5 0.5"
+				src="#501-img-src"
+				material="shader:standard">
+			</a-image>
+
+			<a-image id="502-img"
+				position="-4.119 0.921 -7.771"
+				rotation="-60 -90 0"
+				height="1."
+				width="1.3"
+				scale="0.5 0.5 0.5"
+				src="#502-img-src"
+				material="shader:standard">
+			</a-image>
+
+			<a-image id="503-img"
+				position="-4.119 0.921 -6.635"
+				rotation="-60 -90 0"
+				height="1."
+				width="1.3"
+				scale="0.5 0.5 0.5"
+				src="#503-img-src"
+				material="shader:standard">
+			</a-image>
+			
+
+
+			<!-- <a-box id="learning-img-box"
+				position="2.1 1.5 -4.95"
+				width="2"
+				height="1"
+				depth="0.1"
+				shadow>
+				<a-image id="learning-img"
+					position="0 0 0.06"
+					rotation="0 0 0"
+					height="1"
+					width="2"
+					src="#learning-img-src"
+					material="shader:standard">
+				</a-image>
+
+				
+
+			<!-- a-box -->
+
+			<a-box id="window-img-box"
+				position="5.918 1.75 -1.898"
+				rotation="0 90 0"
+				width="1.4"
+				height="1"
+				depth="0.1"
+				scale="1.5 1.5 1.5"
+				color="black"
+				shadow>
+			    <a-image id="WALL-img"
+				    position="0 0 -0.06"
+				    rotation="0 0 0"
+				    height="1"
+				    width="1.4"
+					scale="1 1 1"
+				    src="#window-img-src"
+				    material="shader:standard">
+			    </a-image>
+		    </a-box>
+
+
+			<a-box id="WALL-img-box"
+				position="6.035 1.8 -9.088"
+				rotation="0 90 0"
+				width="4"
+				height="1"
+				depth="0.1"
+				scale="2.7 2.7 2.7"
+				color="white"
+				shadow>
+			    <a-image id="WALL-img"
+				    position="0 0 -0.06"
+				    rotation="0 180 0"
+				    height="1"
+				    width="4"
+					scale="1 1 1"
+				    src="#WALL-img-src"
+				    material="shader:standard">
+			    </a-image>
+		    </a-box>
+
+			<a-box id="WALL02-img-box"
+				position="-0.576 1.8 -15.029"
+				rotation="0 180 0"
+				width="4"
+				height="1"
+				depth="0.1"
+				scale="2.7 2.7 2.7"
+				color="white"
+				shadow>
+			    <a-image id="WALL02-img"
+				    position="0 0 -0.06"
+				    rotation="0 180 0"
+				    height="1"
+				    width="4"
+					scale="1 1 1"
+				    src="#WALL02-img-src"
+				    material="shader:standard">
+			    </a-image>
+		    </a-box>
+
+			<a-box id="WALL03-img-box"
+				position="-7.021 1.8 -9.088"
+				rotation="0 270 0"
+				width="4"
+				height="1"
+				depth="0.1"
+				scale="2.7 2.7 2.7"
+				color="white"
+				shadow>
+			    <a-image id="WALL03-img"
+				    position="0 0 -0.06"
+				    rotation="0 180 0"
+				    height="1"
+				    width="4"
+					scale="1 1 1"
+				    src="#WALL03-img-src"
+				    material="shader:standard">
+			    </a-image>
+		    </a-box>
+
+			<!-- camera -->
+			<!-- <a-camera position="4.5 1.6 7" 
+			    fov="80"
+				far="10000"
+				near="0.01">
+			</a-camera> -->
+			-2.251 0 8
+			<!-- a-camera -->
+			<a-entity id="rig"
+			    movement-controls="constrainToNavMesh: true"
+				position="-2.251 0 18">
+			    <a-entity camera
+				    position="1.147 1.6 -5.466"
+					look-controls="pointerLockEnabled: true">
+                    <a-entity cursor="rayOrigin: mouse"
+					    raycaster="objects: .interactable">
+					</a-entity> 
+					<a-plane id="infoplane"
+					    position="0 0 -0.1"
+					    color="black"
+						opacity="0.5"
+						visible="false"
+						click2hideinfo>
+                        <a-plane 
+						    position="0 0 0.01"
+							color="#FFFFFF"
+							width="0.1"
+							height="0.1">
+
+							<a-text id="info-title"
+							    position="0 0.02 0"
+								value="title"
+								align="center"
+								color="black"
+								width="0.1">
+							</a-text>
+
+							<!-- <a-text id="word"
+				                position="0 0.02 0"
+				                color="black"
+				                value="戎館"
+								align="center"
+				                width="0.3"
+				                font="./assets/font/custom-msdf(2)/custom-msdf.json"
+				                negate="false">
+							</a-text> -->
+
+							<!-- <a-image id="YebisuKan-word03-img"
+			                    
+				                height="1"
+				                width="1"
+				                scale="0.09 0.09 0.09"
+				                src="#lin-word-img-src"
+				                material="shader:standard">
+			                </a-image> -->
+
+							<a-text id="info-content"
+								color="black"
+								width="0.08"
+								align="center"
+								value="jnsjdvnjsndcndskcnnsajcnxzmcm,mncnsjcnjdncxnmcxnmnxnvzvmndsjnvmzxc,nmns">
+							</a-text>
+
+							
+						</a-plane>
+					</a-plane>
+				</a-entity>
+			</a-entity>
+			
+			
+		</a-scene>
+	</body>
+</html>
